@@ -1,0 +1,26 @@
+{
+  "name": "fm-newsletter-sign-up-with-success-message-main",
+  "version": "1.0.0",
+  "description": "A solution build to the Frontend Mentor's newsletter sign up component.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i tailwind.css -o ../assets/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deeokafor/fm-newsletter-sign-up-with-success-message-main.git"
+  },
+  "keywords": [
+    "signup",
+    "success",
+    "message",
+    "newsletter"
+  ],
+  "author": "Okafor-udah Divine Chukwunwemmeri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deeokafor/fm-newsletter-sign-up-with-success-message-main/issues"
+  },
+  "homepage": "https://github.com/Deeokafor/fm-newsletter-sign-up-with-success-message-main#readme"
+}
