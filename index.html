@@ -19,11 +19,11 @@
 <body class="tw-text-md">
   <main class="tw-h-screen">
     <!-- Sign-up form start -->
-    <div id="form_sign_up" class="tw-h-full">
+    <div id="form_sign_up" class="tw-h-full tw-hidden">
       <div id="hero">
         <img src="/assets/images/illustration-sign-up-mobile.svg" alt="" class="tw-w-full">
       </div>
-      <div class="tw-flex tw-flex-col tw-justify-evenly tw-py-10 tw-px-5 ">
+      <div class="tw-flex tw-flex-col tw-justify-evenly tw-py-10 tw-px-5">
         <h1 class="tw-text-[40px] tw-font-bold">
           Stay updated!
         </h1>
@@ -40,21 +40,30 @@
             Email address
           </label>
           <input type="text" name="email_address" id="email_address" placeholder="email@company.com" class="tw-p-5 tw-border tw-border-ns-g tw-rounded-lg tw-bg-transparent tw-my-5">
-          <button disabled="disabled" class="tw-p-5 tw-bg-ns-dsg tw-text-white tw-rounded-lg">Subscribe to monthly newsletter</button>
+          <button disabled="disabled" class="tw-p-5 tw-bg-ns-dsg tw-text-white/90 tw-rounded-lg tw-font-black">Subscribe to monthly newsletter</button>
         </form>
       </div>
     </div>  
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <!-- <div id="modal">
-      Thanks for subscribing!
-    
-      A confirmation email has been sent to ash@loremcompany.com. 
-      Please open it and click the button inside to confirm your subscription.
-    
-      Dismiss message
-    </div> -->
+    <div id="modal" class="tw-py-10 tw-px-5 tw-h-full">
+      <div class="tw-h-1/2 tw-flex tw-flex-col tw-justify-end">
+        <div><img src="assets/images/icon-success.svg" alt="" srcset=""></div>
+        <h1 class="tw-text-[40px] tw-font-black tw-leading-10 tw-pt-8 tw-pb-6">
+          Thanks for subscribing!
+        </h1>
+        <p>
+          A confirmation email has been sent to <span id="company_name" class="tw-font-black">ash@loremcompany.com</span>. 
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <div class="tw-h-1/2 tw-flex tw-flex-col tw-justify-end">
+        <button class="tw-p-5 tw-bg-ns-dsg tw-text-white/90 tw-rounded-lg tw-font-black tw-w-full">
+          Dismiss message
+        </button>
+      </div>
+    </div>
     <!-- Success message end -->
   </main>
 
