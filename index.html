@@ -17,7 +17,7 @@
   </style>
 </head>
 <body class="tw-text-md">
-  <main class="tw-h-screen">
+  <main class="tw-h-screen md:tw-flex md:tw-justify-center md:tw-items-center md:tw-bg-ns-dsg">
     <!-- Sign-up form start -->
     <div id="form_sign_up" class="tw-h-full tw-hidden">
       <div id="hero">
@@ -47,19 +47,19 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div id="modal" class="tw-py-10 tw-px-5 tw-h-full">
-      <div class="tw-h-1/2 tw-flex tw-flex-col tw-justify-end">
-        <div><img src="assets/images/icon-success.svg" alt="" srcset=""></div>
-        <h1 class="tw-text-[40px] tw-font-black tw-leading-10 tw-pt-8 tw-pb-6">
+    <div id="modal" class="tw-py-10 tw-px-5 tw-h-full tw-bg-white md:tw-h-[28rem] md:tw-w-[28rem] md:tw-flex md:tw-flex-col md:tw-items-center md:tw-justify-around md:tw-rounded-3xl md:tw-px-14">
+      <div class="tw-h-1/2 tw-flex tw-flex-col tw-justify-end md:tw-h-auto">
+        <div class="md:tw-w-12"><img src="assets/images/icon-success.svg" alt="" srcset=""></div>
+        <h1 class="tw-text-[40px] tw-font-black tw-leading-10 tw-pt-8 tw-pb-6 md:tw-text-[1.9rem]">
           Thanks for subscribing!
         </h1>
-        <p>
+        <p class="md:tw-text-sm">
           A confirmation email has been sent to <span id="company_name" class="tw-font-black">ash@loremcompany.com</span>. 
           Please open it and click the button inside to confirm your subscription.
         </p>
       </div>
-      <div class="tw-h-1/2 tw-flex tw-flex-col tw-justify-end">
-        <button class="tw-p-5 tw-bg-ns-dsg tw-text-white/90 tw-rounded-lg tw-font-black tw-w-full">
+      <div class="tw-h-1/2 tw-flex tw-flex-col tw-justify-end tw-w-full md:tw-h-auto">
+        <button class="tw-p-5 tw-bg-ns-dsg tw-text-white/90 tw-border-none tw-rounded-lg tw-font-black tw-w-full md:tw-text-sm md:tw-py-4">
           Dismiss message
         </button>
       </div>
