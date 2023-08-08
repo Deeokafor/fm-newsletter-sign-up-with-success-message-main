@@ -655,6 +655,22 @@ video {
   background-image: url('/assets/images/illustration-sign-up-desktop.svg');
 }
 
+.tw-bg-\[url\(\'\.\/assets\/images\/illustration-sign-up-desktop\.svg\'\)\] {
+  background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+}
+
+.tw-bg-\[url\(\'\/\.\.\/\.\/assets\/images\/illustration-sign-up-desktop\.svg\'\)\] {
+  background-image: url('/.././assets/images/illustration-sign-up-desktop.svg');
+}
+
+.tw-bg-\[url\(\'\/\.\.\/\.\.\/assets\/images\/illustration-sign-up-desktop\.svg\'\)\] {
+  background-image: url('/../../assets/images/illustration-sign-up-desktop.svg');
+}
+
+.tw-bg-\[url\(\'\/\.\.\/assets\/images\/illustration-sign-up-desktop\.svg\'\)\] {
+  background-image: url('/../assets/images/illustration-sign-up-desktop.svg');
+}
+
 .tw-bg-cover {
   background-size: cover;
 }
