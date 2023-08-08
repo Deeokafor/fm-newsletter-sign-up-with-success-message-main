@@ -56,37 +56,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Tailwindcss](https://tailwindcss.com/) - css utility-first framework
+- ES6 (Javascript version 2015)
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- I had to refresh my memory on how html & css file paths worked. I had to learn that using relative paths is more production friendly than absolute paths... a change in directory could cause paths to fail.
 
 ### Continued development
 
@@ -99,6 +76,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [w3docs](https://www.w3docs.com) - Their tutorial on adjusting the positions of custom list styles was helpful. You can check it out at [How to Adjust the Position of List Style Image](https://www.w3docs.com/snippets/css/how-to-adjust-the-position-of-list-style-image.html)
 
 - [css-tricks](https://css-tricks.com/quick-reminder-about-file-paths/) - Their short tutorial on fixed and relative filepaths was super helpful in debugging a file path issue I had with Tailwindcss. You can check it out at [Quick Reminder About File Paths](https://css-tricks.com/quick-reminder-about-file-paths/)
+
+- [github mkdocs](https://github.com/mkdocs/mkdocs/issues/1757) - the discussions held by these helpful fellows on how github pages using the MkDocs handles file paths in production was super helpful to debug my path failure issues. You can check them out at [ Image paths can break when deploying to gh-pages #1757 ](https://github.com/mkdocs/mkdocs/issues/1757)
 
 
 ## Author
