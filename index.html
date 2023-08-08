@@ -10,43 +10,44 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body class="tw-overflow-y-hidden tw-h-screen md:tw-bg-ns-dsg md:tw-flex tw-justify-center tw-items-center">
-  <main class="tw-h-full tw-overflow-hidden md:tw-flex md:tw-w-[50rem] md:tw-h-[32rem] tw-rounded-3xl md:tw-bg-white">
+  <main class="tw-h-full tw-overflow-hidden md:tw-flex md:tw-w-[46rem] md:tw-h-[32rem] md:tw-rounded-3xl md:tw-bg-white">
     <!-- Sign-up form start -->
-    <div class="tw-h-full md:tw-flex">
+    <div class="tw-h-full md:tw-flex md:tw-w-full">
       <!-- hero start -->
-      <div class="tw-h-1/3 md:tw-order-2 md:tw-h-[32rem] tw-w-1/2">
-        <div id="mobile_hero" class="md:tw-order-2"><img src="./assets/images/illustration-sign-up-mobile.svg" alt="" srcset="" class="tw-w-full md:tw-hidden"></div>
-        <div id="desktop_hero" class="tw-hidden tw-h-[32rem] tw-p-5 md:tw-flex tw-flex-row tw-items-center tw-justify-end"><img src="./assets/images/illustration-sign-up-desktop.svg" alt="" srcset="" class="tw-h-full"></div>
+      <div class="tw-h-1/3 md:tw-order-2 md:tw-h-[32rem] md:tw-w-1/2 md:tw-p-5">
+        <div id="mobile_hero" class=""><img src="./assets/images/illustration-sign-up-mobile.svg" alt="" srcset="" class="tw-w-full md:tw-hidden"></div>
+        <div id="desktop_hero" class="tw-hidden md:tw-flex tw-flex-row tw-items-center tw-justify-end tw-bg-white tw-h-full tw-w-full tw-rounded-2xl tw-bg-[url('/assets/images/illustration-sign-up-desktop.svg')] tw-bg-cover tw-bg-no-repeat"></div>
       </div>
       <!-- hero end -->
 
       <!-- form start -->
-      <div class="tw-pt-10 tw-pb-7 tw-px-6 tw-flex tw-flex-col tw-justify-between tw-h-2/3 md:tw-w-1/2 md:tw-h-[32rem] tw-bg-red-300">
-        <div>
-          <h1 class="tw-text-4xl tw-font-extrabold">Stay updated!</h1>
-          <p class="tw-my-4">Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul class="tw-flex tw-flex-col tw-justify-around tw-h-3/5">
-            <li class="tw-flex tw-my-2">
-              <div class="tw-mr-3 tw-pt-1"><img src="./assets/images/icon-list.svg" alt="" srcset=""></div>
+      <div class="tw-pt-10 tw-pb-7 tw-px-6 tw-flex tw-flex-col tw-justify-between tw-h-2/3 md:tw-w-1/2 md:tw-h-[32rem] md:tw-pl-9 md:tw-pr-0 md:tw-justify-start md:tw-items-center">
+        <div class="md:tw-w-11/12">
+          <!-- NOTE!! 1 PIXEL IS EQUAL TO 0.0625 REMS/EMS -->
+          <h1 class="tw-text-4xl tw-font-extrabold md:tw-mt-4">Stay updated!</h1>
+          <p class="tw-my-4 text-md-size">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="tw-flex tw-flex-col tw-justify-around tw-h-3/5 text-md-size md:tw-h-3/6">
+            <li class="tw-flex tw-my-2 list-aligned-hoz md:tw-my-1">
+              <div class="tw-mr-3 tw-pt-1"><img src="./assets/images/icon-list.svg" alt="" srcset="" class="icons-md-size"></div>
               <div>Product discovery and building what matters</div>
             </li>
-            <li class="tw-flex tw-my-2">
-              <div class="tw-mr-3 tw-pt-1"><img src="./assets/images/icon-list.svg" alt="" srcset=""></div>
+            <li class="tw-flex tw-my-2 list-aligned-hoz md:tw-my-1">
+              <div class="tw-mr-3 tw-pt-1"><img src="./assets/images/icon-list.svg" alt="" srcset="" class="icons-md-size"></div>
               <div>Measuring to ensure updates are a success</div>
             </li>
-            <li class="tw-flex tw-my-2">
-              <div class="tw-mr-3 tw-pt-1"><img src="./assets/images/icon-list.svg" alt="" srcset=""></div>
+            <li class="tw-flex tw-my-2 list-aligned-hoz md:tw-my-1">
+              <div class="tw-mr-3 tw-pt-1"><img src="./assets/images/icon-list.svg" alt="" srcset="" class="icons-md-size"></div>
               <div>And much more!</div>
             </li>
           </ul>
         </div>
-        <form action="">
+        <form class="md:tw-w-11/12">
           <label for="email" class="tw-font-extrabold tw-flex tw-flex-col">
-            <span class="tw-text-[0.9rem]">Email address</span>
-            <input type="text" name="email" id="email" placeholder="email@company.com" class="tw-p-4 tw-rounded-lg tw-font-normal tw-border tw-border-ns-g tw-mb-5 tw-mt-1">
+            <span class="tw-text-[0.9rem] md:tw-text-[0.7rem] md:tw-mt-10">Email address</span>
+            <input type="text" name="email" id="email" placeholder="email@company.com" class="tw-p-4 tw-rounded-lg tw-font-bold tw-border tw-border-ns-g tw-mb-5 tw-mt-1 tw-tracking-[0.025rem] tw-placeholder-black/30 md:tw-text-[0.65rem] md:tw-py-3">
           </label>
 
-          <button type="submit" class="tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg">Subscribe to monthly newsletter</button>
+          <button type="submit" class="tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <!-- form end -->

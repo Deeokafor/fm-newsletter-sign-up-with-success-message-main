@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+@layer components {
+    .text-md-size {
+        @apply md:tw-text-[0.8rem];
+    }
+
+    .icons-md-size {
+        @apply md:tw-w-[1.1rem]
+    }
+
+    .list-aligned-hoz {
+        @apply md:tw-items-center
+    }
+}
