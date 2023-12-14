@@ -10,7 +10,7 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body class="tw-overflow-y-hidden tw-h-screen md:tw-bg-ns-dsg md:tw-flex tw-justify-center tw-items-center">
-  <main class="tw-h-full tw-overflow-hidden md:tw-flex md:tw-w-[46rem] md:tw-h-[32rem] md:tw-rounded-3xl md:tw-bg-white">
+  <main id="main" class="tw-h-full tw-overflow-hidden md:tw-flex md:tw-w-[46rem] md:tw-h-[32rem] md:tw-rounded-3xl md:tw-bg-white">
     <!-- Sign-up form start -->
     <div class="tw-h-full md:tw-flex md:tw-w-full">
       <!-- hero start -->
@@ -40,16 +40,16 @@
             </li>
           </ul>
         </div>
-        <form class="md:tw-w-11/12">
+        <form action="#" class="md:tw-w-11/12">
           <label for="email" class="tw-font-extrabold tw-flex tw-flex-col">
             <div class="tw-flex tw-flex-row tw-justify-between md:tw-mt-10">
               <span class="tw-text-[0.9rem] md:tw-text-[0.7rem]">Email address</span>
-              <span id="vldt_msg" class="tw-text-[0.9rem] md:tw-text-[0.7rem] tw-capitalize tw-text-red-400">error</span>
+              <span id="vldt_msg" class="tw-text-[0.9rem] md:tw-text-[0.7rem] tw-capitalize tw-text-red-400"></span>
             </div>
-            <input type="text" name="email" id="email" placeholder="email@company.com" class="tw-p-4 tw-rounded-lg tw-font-bold tw-border tw-outline-none tw-border-ns-g/70 tw-mb-5 tw-mt-1 tw-tracking-[0.025rem] tw-placeholder-black/30 md:tw-text-[0.65rem] md:tw-py-3 hover:tw-cursor-pointer focus:tw-border-black focus:tw-border-[1.5px] tw-transition-colors">
+            <input type="text" name="email" id="email" placeholder="email@company.com" value="" class="tw-p-4 tw-rounded-lg tw-font-bold tw-border tw-outline-none tw-border-ns-g/70 tw-mb-5 tw-mt-1 tw-tracking-[0.025rem] tw-placeholder-black/30 md:tw-text-[0.65rem] md:tw-py-3 hover:tw-cursor-pointer focus:tw-border-black focus:tw-border-[1.5px] tw-transition-colors">
           </label>
 
-          <button type="" class="tw-mb-5 tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3 active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000">Subscribe to monthly newsletter</button>
+          <button id="submit" type="submit" class="tw-mb-5 tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3 active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <!-- form end -->
@@ -58,7 +58,7 @@
   </main>
 
   <!-- modal start -->
-  <div class="tw-hidden tw-fixed text-md-size">
+  <div id="modal" class="tw-hidden tw-fixed text-md-size">
     <div class="tw-flex tw-flex-col tw-h-screen tw-justify-between tw-p-6 md:tw-bg-white md:tw-w-[24rem] md:tw-h-[24rem] md:tw-rounded-3xl md:tw-p-10 md:tw-justify-between">
       <div class="tw-h-3/5 tw-flex tw-flex-col tw-justify-end md:tw-h-4/5">
         <div class="tw-mb-3 md:tw-mb-0 md:tw-w-10"><img src="./assets/images/icon-success.svg" alt="" srcset=""></div>
@@ -76,4 +76,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </footer> -->
 </body>
+<script src="../assets/js/fm_vldt.js"></script>
 </html>
