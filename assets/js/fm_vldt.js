@@ -4,6 +4,11 @@ let modal = document.getElementById('modal');
 let main = document.getElementById('main');
 let email = document.getElementById('email').value;
 
+const errorMsg = {
+    err1: 'input field can\'t be empty.',
+    err2: 'Invalid email format, Please enter a valid email.'
+}
+
 //returns true if input has reqqquired character
 function isEmail(input) { 
     //ditched this for a regex
@@ -29,15 +34,20 @@ function isInputEmpty(input) {
 submit.addEventListener('click', function (event) {
     //validate input
     event.preventDefault();
+
+    // Get the current value of the email input inside the event listener
+    let email = document.getElementById('email').value;
+
     // 1. check if input field is empty
     // 2. if 1 is true, do nothing else check if input is string && email
     // 3. if 2 is true, submit email
-    if (isEmpty(email)) {
-        console.log(`field is empty..`);
+    if (isInputEmpty(email)) {
+        console.log(errorMsg.err1);
+        message.textContent = errorMsg.err1;
+    } else if (isString(email) && isEmail(email)) {
+        console.log(`submitiing email:`, email);
+        message.textContent = null;
     } else {
-        console.log(`field is not empty.`);
+        console.log(errorMsg.err2);
     }
 })
-
-console.log(isInputEmpty(email));
-console.log(isEmail(email));
