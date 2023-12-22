@@ -2,11 +2,20 @@ let submit = document.getElementById('submit');
 let message = document.getElementById('vldt_msg');
 let modal = document.getElementById('modal');
 let main = document.getElementById('main');
-let email = document.getElementById('email').value;
+let submitted_mail = document.querySelector('#sub_email');
+let modal_dismiss_button = document.querySelector('#modal_dismiss_button')
 
 const errorMsg = {
     err1: 'input field can\'t be empty.',
-    err2: 'Invalid email format, Please enter a valid email.'
+    err2: 'Invalid format, enter a valid email.'
+}
+
+function addClass (element, className) {
+    return element.classList.add(className);
+}
+
+function removeClass (element, className) {
+    return element.classList.remove(className);
 }
 
 //returns true if input has reqqquired character
@@ -47,7 +56,15 @@ submit.addEventListener('click', function (event) {
     } else if (isString(email) && isEmail(email)) {
         console.log(`submitiing email:`, email);
         message.textContent = null;
+        addClass(main, 'tw-hidden');
+        removeClass(modal, 'tw-hidden');
+        submitted_mail.textContent = email;
     } else {
         console.log(errorMsg.err2);
+        message.textContent = errorMsg.err2;
     }
+})
+
+modal_dismiss_button.addEventListener('click', function () {
+    window.location.reload();
 })

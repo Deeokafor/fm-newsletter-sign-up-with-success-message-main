@@ -657,6 +657,11 @@ video {
   border-color: hsl(231 7% 60% / 0.7);
 }
 
+.tw-bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .tw-bg-ns-dsg {
   --tw-bg-opacity: 1;
   background-color: hsl(234 29% 20% / var(--tw-bg-opacity));
@@ -758,6 +763,11 @@ video {
 
 .tw-tracking-\[0\.03rem\] {
   letter-spacing: 0.03rem;
+}
+
+.tw-text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .tw-text-red-400 {
