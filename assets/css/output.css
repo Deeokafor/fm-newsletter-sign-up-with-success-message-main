@@ -798,6 +798,10 @@ video {
   color: rgb(0 0 0 / 0.3);
 }
 
+.tw-opacity-0 {
+  opacity: 0;
+}
+
 .tw-outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
