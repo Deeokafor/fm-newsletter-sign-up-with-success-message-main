@@ -1,9 +1,9 @@
-let submit = document.getElementById('submit');
-let message = document.getElementById('vldt_msg');
+let submitButton = document.getElementById('submit-button');
+let validationMessage = document.getElementById('validation-message');
 let modal = document.getElementById('modal');
 let main = document.getElementById('main');
-let submitted_mail = document.querySelector('#sub_email');
-let modal_dismiss_button = document.querySelector('#modal_dismiss_button')
+let submittedEmailName = document.querySelector('#submitted-email-name');
+let modalDismissButton = document.querySelector('#modal-dismiss-button')
 
 const errorMsg = {
     err1: 'input field can\'t be empty.',
@@ -40,7 +40,7 @@ function isInputEmpty(input) {
     return input.trim() === '';
 }
 
-submit.addEventListener('click', function (event) {
+submitButton.addEventListener('click', function (event) {
     //validate input
     event.preventDefault();
 
@@ -52,19 +52,19 @@ submit.addEventListener('click', function (event) {
     // 3. if 2 is true, submit email
     if (isInputEmpty(email)) {
         console.log(errorMsg.err1);
-        message.textContent = errorMsg.err1;
+        validationMessage.textContent = errorMsg.err1;
     } else if (isString(email) && isEmail(email)) {
         console.log(`submitiing email:`, email);
-        message.textContent = null;
+        validationMessage.textContent = null;
         addClass(main, 'tw-hidden');
         removeClass(modal, 'tw-hidden');
-        submitted_mail.textContent = email;
+        submittedEmailName.textContent = email;
     } else {
         console.log(errorMsg.err2);
-        message.textContent = errorMsg.err2;
+        validationMessage.textContent = errorMsg.err2;
     }
 })
 
-modal_dismiss_button.addEventListener('click', function () {
+modalDismissButton.addEventListener('click', function () {
     window.location.reload();
 })

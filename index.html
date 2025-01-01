@@ -44,12 +44,12 @@
           <label for="email" class="tw-font-extrabold tw-flex tw-flex-col">
             <div class="tw-flex tw-flex-row tw-justify-between md:tw-mt-10">
               <span class="tw-text-[0.9rem] md:tw-text-[0.7rem]">Email address</span>
-              <span id="vldt_msg" class="tw-text-[0.9rem] md:tw-text-[0.7rem] tw-capitalize tw-text-red-400"></span>
+              <span id="validation-message" class="tw-text-[0.9rem] md:tw-text-[0.7rem] tw-capitalize tw-text-red-400"></span>
             </div>
             <input type="text" name="email" id="email" placeholder="email@company.com" value="" class="tw-p-4 tw-rounded-lg tw-font-bold tw-border tw-outline-none tw-border-ns-g/70 tw-mb-5 tw-mt-1 tw-tracking-[0.025rem] tw-placeholder-black/30 md:tw-text-[0.65rem] md:tw-py-3 hover:tw-cursor-pointer focus:tw-border-black focus:tw-border-[1.5px] tw-transition-colors">
           </label>
 
-          <button id="submit" type="submit" class="tw-mb-5 tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3 active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000">Subscribe to monthly newsletter</button>
+          <button id="submit-button" type="submit" class="tw-mb-5 tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3 active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <!-- form end -->
@@ -64,10 +64,10 @@
         <div class="tw-mb-3 md:tw-mb-0 md:tw-w-10"><img src="./assets/images/icon-success.svg" alt="" srcset=""></div>
         <h1 class="tw-text-4xl tw-font-black tw-py-7">Thanks for subscribing!</h1>
         <p>A confirmation email has been sent to 
-          <span id="sub_email" class="tw-font-extrabold">ash@loremcompany.com</span>
+          <span id="submitted-email-name" class="tw-font-extrabold">ash@loremcompany.com</span>
           Please open it and click the button inside to confirm your subscription.</p>
       </div>
-      <button id="modal_dismiss_button" class="tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3 active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000">Dismiss message</button>
+      <button id="modal-dismiss-button" class="tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3 active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000">Dismiss message</button>
     </div>
   </div>
   <!-- modal end -->    
@@ -76,5 +76,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </footer> -->
 </body>
-<script src="./assets/js/fm_vldt.js"></script>
+<script src="./assets/js/validate_form.js"></script>
 </html>
