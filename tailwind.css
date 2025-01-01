@@ -2,7 +2,7 @@
 @tailwind utilities;
 @tailwind components;
 
-@layer components {
+/* @layer components {
     .text-md-size {
         @apply md:tw-text-[0.8rem];
     }
@@ -14,4 +14,4 @@
     .list-aligned-hoz {
         @apply md:tw-items-center
     }
-}
+} */

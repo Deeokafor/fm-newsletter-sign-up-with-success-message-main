@@ -56,7 +56,8 @@ submitButton.addEventListener('click', function (event) {
     } else if (isString(email) && isEmail(email)) {
         console.log(`submitiing email:`, email);
         validationMessage.textContent = null;
-        addClass(main, 'tw-opacity-0');
+        addClass(main, 'tw-hidden');
+        addClass(main, 'md:tw-hidden')
         removeClass(modal, 'tw-hidden');
         submittedEmailName.textContent = email;
     } else {
