@@ -5,6 +5,7 @@ let main = document.getElementById('main');
 let submittedEmailName = document.querySelector('#submitted-email-name');
 let modalDismissButton = document.querySelector('#modal-dismiss-button');
 let footer = document.querySelector('#footer');
+let desktopHero = document.querySelector('#desktop-hero');
 
 const errorMsg = {
     err1: 'input field can\'t be empty.',
@@ -34,6 +35,7 @@ function isInputEmpty(input) {
     return input.trim() === '';
 }
 
+
 submitButton.addEventListener('click', function (event) {
     //validate input
     event.preventDefault();
@@ -49,15 +51,17 @@ submitButton.addEventListener('click', function (event) {
         validationMessage.textContent = errorMsg.err1;
         addClass(email, 'tw-border-ns-tmt');
         addClass(email, 'tw-bg-ns-tmt/10');
+        removeClass(desktopHero, 'tw-rounded-2xl');
     } else if (isString(email.value) && isEmail(email.value)) {
         console.log(`submitiing email:`, email.value);
         validationMessage.textContent = null;
         addClass(main, 'tw-hidden');
-        addClass(main, 'md:tw-hidden')
+        addClass(main, 'lg:tw-hidden')
         removeClass(modal, 'tw-hidden');
         removeClass(email, 'tw-border-ns-tmt');
         removeClass(email, 'tw-bg-ns-tmt/10');
         removeClass(email, 'tw-text-ns-tmt');
+        removeClass(desktopHero, 'tw-rounded-2xl')
         addClass(footer, 'tw-hidden')
         submittedEmailName.textContent = email.value;
     } else {

@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./assets/css/custom.css">
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
-<body class="tw-text-[16px]">
-    <main id="main" class="">
-        <div class="">
-            <div id="mobile_hero" class="tw-h-[284px] tw-bg-[url('../images/illustration-sign-up-mobile.svg')] tw-bg-no-repeat tw-bg-cover tw-rounded-b-2xl"></div>
-            <div id="desktop_hero" class=""></div>
+<body class="tw-text-[16px] lg:tw-bg-ns-dsg lg:tw-flex lg:tw-flex-col lg:tw-h-screen lg:tw-items-center lg:tw-justify-center">
+    <main id="main" class=" tw-bg-white lg:tw-w-[58rem] lg:tw-h-[40rem] lg:tw-rounded-[1.95rem] lg:tw-flex lg:tw-p-6 lg:tw-hidde">
+        <div class="lg:tw-flex lg:tw-w-1/2 lg:tw-order-2 lg:tw-ml-5">
+            <div id="mobile-hero" class="tw-h-[284px] tw-bg-[url('../images/illustration-sign-up-mobile.svg')] tw-bg-no-repeat tw-bg-cover tw-rounded-b-2xl lg:tw-hidden"></div>
+            <div id="desktop-hero" class="tw-w-full tw-bg-[url('../images/illustration-sign-up-desktop.svg')] tw-bg-center tw-bg-cover tw-bg-no-repeat tw-rounded-2xl"></div>
         </div>
-        <div class="tw-flex tw-flex-col tw-px-8 tw-py-10">
+        <div class="tw-flex tw-flex-col tw-px-8 tw-py-10 lg:tw-w-1/2 lg:tw-justify-center">
             <div class="">
                 <h1 class="tw-text-[2.55rem] tw-font-extrabold">Stay updated!</h1>
                 <p class="tw-py-6">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -33,34 +33,36 @@
                     </li>
                 </ul>
             </div>
-            <form action="#" class="tw-mt-10">
+
+            <form action="#" class="tw-mt-10 lg:tw-mt-5">
                 <label for="email" class="">
-                    <div class="tw-text-[13px] tw-flex tw-justify-between">
-                        <span class="tw-font-bold md:tw-text-[0.7rem">Email address</span>
-                        <span id="validation-message" class="tw-font-bold md:tw-text-[0.7rem] tw-capitalize tw-text-ns-tmt"></span>
+                    <div class="tw-text-[14px] tw-flex tw-justify-between">
+                        <span class="tw-font-bold">Email address</span>
+                        <span id="validation-message" class="tw-font-bold tw-capitalize tw-text-ns-tmt"></span>
                     </div>
-                    <input type="text" name="email" id="email-input" placeholder="email@company.com" value="" class="tw-w-full tw-p-4 tw-rounded-lg tw-font-medium tw-border tw-outline-none tw-border-ns-g tw-mb-6 tw-mt-1 tw-tracking-[0.025rem] tw-placeholder-black/30 md:tw-text-[0.65rem] md:tw-py-3 hover:tw-cursor-pointer focus:tw-border-black focus:tw-border-[1.5px] tw-transition-colors">
+                    <input type="text" name="email" id="email-input" placeholder="email@company.com" value="" class="tw-w-full tw-p-4 tw-rounded-lg tw-font-medium tw-border tw-outline-none tw-border-ns-g tw-mb-6 tw-mt-1 tw-tracking-[0.025rem] tw-placeholder-black/30 lg:tw-text-[14px] md:tw-py-3 hover:tw-cursor-pointer focus:tw-border-black focus:tw-border-[1.5px] tw-transition-colors">
                 </label>
-                <button id="submit-button" type="submit" class="tw-mb-5 tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3 active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000">Subscribe to monthly newsletter</button>
+                <button id="submit-button" type="submit" class="tw-mb-5 tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[14px] tw-tracking-[0.03rem] active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 not-tw-gradient-shadow">Subscribe to monthly newsletter</button>
             </form>
         </div>
     </main>
 
     <!-- Modal -->
-    <div id="modal" class="tw-hidden tw-fixed">
-        <div class="tw-flex tw-flex-col tw-h-screen tw-justify-between tw-p-6 tw-pb-8 md:tw-bg-white md:tw-w-[24rem] md:tw-h-[24rem] md:tw-rounded-3xl md:tw-p-10 md:tw-justify-between">
-            <div class="tw-text-ns-dsg tw-h-3/5 tw-flex tw-flex-shrink-0 tw-flex-col tw-justify-end md:tw-h-4/5">
-                <div class="tw-mb-3 md:tw-mb-0 md:tw-w-10"><img src="./assets/images/icon-success.svg" alt="" class=""></div>
+    <div id="modal" class="tw-hidden lg:tw-text-[14px]">
+        <div class="tw-min-h-screen tw-p-6 tw-pb-8 tw-flex tw-flex-wrap tw-items-start lg:tw-bg-white lg:tw-w-[26rem] lg:tw-min-h-[26rem] lg:tw-rounded-[1.9rem] lg:tw-p-12">
+            <div class="tw-text-ns-dsg tw-self-end">
+                <div class="tw-mb-3"><img src="./assets/images/icon-success.svg" alt="" class=""></div>
                 <h1 class="tw-text-[2.50rem] tw-leading-[2.55rem] tw-font-black tw-py-7">Thanks for subscribing!</h1>
                 <p class="">A confirmation email has been sent to 
                     <span id="submitted-email-name" class="tw-font-extrabold">ash@loremcompany.com</span>
                     Please open it and click the button inside to confirm your subscription.</p>
             </div>
-            <button id="modal-dismiss-button" class="tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg md:tw-text-[0.7rem] tw-tracking-[0.03rem] md:tw-py-3 active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000">Dismiss message</button>
+            <button id="modal-dismiss-button" class="tw-w-full tw-p-4 tw-bg-ns-dsg tw-text-white tw-font-bold tw-rounded-lg tw-tracking-[0.03rem] active:tw-bg-gradient-to-r tw-from-rose-500 tw-to-orange-500 tw-transition-colors tw-duration-1000 tw-self-end lg:tw-mt-8">Dismiss message</button>
         </div>
     </div>
     <!-- Modal -->
-    <footer id="footer" class="attribution tw-text-center tw-px-8 tw-pb-8 tw-opacity-70">
+
+    <footer id="footer" class="attribution tw-text-center tw-px-8 tw-pb-8 tw-opacity-70 lg:tw-text-white lg:tw-my-10">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="tw-underline tw-underline-offset-4">Frontend Mentor</a>. 
         Coded by <a href="https://www.frontendmentor.io/profile/Deeokafor" class="tw-underline tw-underline-offset-4">Divine Okafor-udah</a>.
     </footer>
