@@ -16,7 +16,7 @@
 
 .not-tw-gradient-shadow:active {
     box-shadow: 
-    -10px 15px 20px rgba(244, 63, 94, 0.3), 
-    10px 15px 20px rgba(249, 115, 22, 0.3);
+    -10px 15px 20px rgba(244, 63, 94, 0.25), 
+    10px 15px 20px rgba(249, 115, 22, 0.25);
 }
 
