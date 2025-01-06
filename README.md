@@ -31,14 +31,14 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshots
-<figure style="width:270px">
-  <img src="./assets/images/mobile-screen.png" width="">
+<figure style="width:270px; height:640px">
+  <img src="./assets/images/mobile-screen.png" width="270px" height="640px">
   <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">mobile screen</figcaption>
 </figure>
 <br>
 <br>
-<figure style="width:270px">
-  <img src="./assets/images/mobile-screen-success.png" width="">
+<figure style="width:270px; height:640px">
+  <img src="./assets/images/mobile-screen-success.png" width="270px" height="640px">
   <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">mobile success screen</figcaption>
 </figure>
 <br>
