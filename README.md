@@ -31,40 +31,47 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshots
-<figure style="width:35%">
+<figure style="width:270px">
   <img src="./assets/images/mobile-screen.png" width="">
   <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">mobile screen</figcaption>
 </figure>
 <br>
-<figure style="width:35%">
+<br>
+<figure style="width:270px">
   <img src="./assets/images/mobile-screen-success.png" width="">
   <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">mobile success screen</figcaption>
 </figure>
+<br>
 <br>
 <figure>
   <img src="./assets/images/desktop-screen.png" width="100%">
   <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">desktop screen</figcaption>
 </figure>
 <br>
+<br>
 <figure>
   <img src="./assets/images/desktop-screen-succes.png" width="100%">
   <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">desktop success screen</figcaption>
 </figure>
+<br>
 <br>
 <figure style="width:100%">
   <img src="./assets/images/error-1.png" width="100%">
   <figcaption style="text-transform:Capitalize; background:rgba(255,0,0,0.1); padding: 8px">invalid email error</figcaption>
 </figure>
 <br>
+<br>
 <figure style="width:100%">
   <img src="./assets/images/error-2.png" width="100%">
   <figcaption style="text-transform:Capitalize; background:rgba(255,0,0,0.1); padding: 8px">input field error</figcaption>
 </figure>
 <br>
+<br>
 <figure style="width:100%">
   <img src="./assets/images/active-state-2.png" width="100%">
   <figcaption style="text-transform:Capitalize; background:rgba(0,255,0,0.1); padding: 8px">input field active</figcaption>
 </figure>
+<br>
 <br>
 <figure style="width:100%">
   <img src="./assets/images/active-state-1.png" width="100%">
