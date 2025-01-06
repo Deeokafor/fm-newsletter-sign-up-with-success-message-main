@@ -16,8 +16,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -32,25 +30,51 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![](./assets/images/desktop_error_screen.png)
-![](./assets/images/desktop)
-![](./assets/images/desktop_error_screen.png)
-
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+### Screenshots
+<figure style="width:35%">
+  <img src="./assets/images/mobile-screen.png" width="">
+  <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">mobile screen</figcaption>
+</figure>
+<br>
+<figure style="width:35%">
+  <img src="./assets/images/mobile-screen-success.png" width="">
+  <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">mobile success screen</figcaption>
+</figure>
+<br>
+<figure>
+  <img src="./assets/images/desktop-screen.png" width="100%">
+  <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">desktop screen</figcaption>
+</figure>
+<br>
+<figure>
+  <img src="./assets/images/desktop-screen-succes.png" width="100%">
+  <figcaption style="text-transform:Capitalize; background:rgba(255,255,255,0.1); padding: 8px">desktop success screen</figcaption>
+</figure>
+<br>
+<figure style="width:100%">
+  <img src="./assets/images/error-1.png" width="100%">
+  <figcaption style="text-transform:Capitalize; background:rgba(255,0,0,0.1); padding: 8px">invalid email error</figcaption>
+</figure>
+<br>
+<figure style="width:100%">
+  <img src="./assets/images/error-2.png" width="100%">
+  <figcaption style="text-transform:Capitalize; background:rgba(255,0,0,0.1); padding: 8px">input field error</figcaption>
+</figure>
+<br>
+<figure style="width:100%">
+  <img src="./assets/images/active-state-2.png" width="100%">
+  <figcaption style="text-transform:Capitalize; background:rgba(0,255,0,0.1); padding: 8px">input field active</figcaption>
+</figure>
+<br>
+<figure style="width:100%">
+  <img src="./assets/images/active-state-1.png" width="100%">
+  <figcaption style="text-transform:Capitalize; background:rgba(0,255,0,0.1); padding: 8px">button active</figcaption>
+</figure>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repo](https://github.com/Deeokafor/fm-newsletter-sign-up-with-success-message-main)
+- Live Site URL: [https://github.com/Deeokafor/fm-newsletter-sign-up-with-success-message-main](https://github.com/Deeokafor/fm-newsletter-sign-up-with-success-message-main)
 
 ## My process
 
@@ -70,17 +94,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
+Henceforth, I am focusing on writing UI's which pass accessibilty tests and Semantic-ui's.
 ### Useful resources
 
-- [w3docs](https://www.w3docs.com) - Their tutorial on adjusting the positions of custom list styles was helpful. You can check it out at [How to Adjust the Position of List Style Image](https://www.w3docs.com/snippets/css/how-to-adjust-the-position-of-list-style-image.html)
+- [Tailwindcss Docs](https://www.tailwindcss.com) - having to refer to the detailed docs here when in a tight spot was so helpful.
 
-- [css-tricks](https://css-tricks.com/quick-reminder-about-file-paths/) - Their short tutorial on fixed and relative filepaths was super helpful in debugging a file path issue I had with Tailwindcss. You can check it out at [Quick Reminder About File Paths](https://css-tricks.com/quick-reminder-about-file-paths/)
+- [w3schools](https://www.w3schools.com/cssref/css3_pr_align-self.php) - At some point in the project, I was stumped with properly aligning the elements for the `mobile-success-screen` but a little bit of practise on `align-self` rules in css, here, helped me to overcame that challenge in Tailwindcss.
 
-- [github mkdocs](https://github.com/mkdocs/mkdocs/issues/1757) - the discussions held by these helpful fellows on how github pages using the MkDocs handles file paths in production was super helpful to debug my path failure issues. You can check them out at [ Image paths can break when deploying to gh-pages #1757 ](https://github.com/mkdocs/mkdocs/issues/1757)
+
 
 
 ## Author
@@ -91,4 +112,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-- I am thankful to [](). 
+- I am thankful to [Google Search](google.com) :). 
